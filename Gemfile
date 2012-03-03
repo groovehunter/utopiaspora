@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.3'
 
 gem 'sqlite3'
-gem 'mysql'
+gem 'mysql2'
 gem 'devise'
 gem 'haml'
 gem 'haml-rails'

@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120302223511) do
+ActiveRecord::Schema.define(:version => 20120303110147) do
+
+  create_table "people", :force => true do |t|
+    t.string   "guid"
+    t.text     "url"
+    t.string   "diaspora_handle"
+    t.text     "serialized_public_key"
+    t.integer  "owner_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

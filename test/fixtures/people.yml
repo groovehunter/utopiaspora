@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  guid: MyString
+  url: MyText
+  diaspora_handle: MyString
+  serialized_public_key: MyText
+  owner_id: 1
+
+two:
+  guid: MyString
+  url: MyText
+  diaspora_handle: MyString
+  serialized_public_key: MyText
+  owner_id: 1
