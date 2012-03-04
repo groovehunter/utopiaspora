@@ -1,0 +1,44 @@
+
+body {
+    font-family: Verdana, Arial;
+}
+
+header {
+    background-color: #252020;
+    color: #cccccc;
+    border-bottom: 1px solid #040000; 
+}
+
+header a {
+    color: #ccc;
+}
+
+#nav_badges {
+    position: absolute;
+    display: inline-block;
+    min-width: 170px;
+    top: 3px;
+    left: 440px;
+    margin-left: 20px;
+}
+
+#nav_badges .badge {
+    position: relative;
+    top: 2px;
+    display: inline;
+    margin: 0 2px;
+    padding: 8px 3px;
+    padding-bottom: 9px;
+    font-weight: bold;
+    font-size: smaller;
+    width: 28px;
+}
+
+
+#sidebar_left {
+    background-color: #ddd;
+}
+
+#sidebar_right {
+    background-color: #eee;
+}

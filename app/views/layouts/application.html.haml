@@ -1,7 +1,11 @@
 %html
   %head
+    %meta{:charset => 'utf-8'}
+
     %title
       = page_title yield(:page_title)
+    = stylesheet_link_tag    "reset"
+    = stylesheet_link_tag    "layout"
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
@@ -10,14 +14,24 @@
     %header
       = render 'layouts/header'
 
-    %p
-      .notice
-        = notice
-    %p
-      .alert
-        = alert
+    .center
 
-    = yield
+      #sidebar_left
+        = render 'shared/sidebar_left'
 
-    %footer
-      .container
+      #content
+        %p
+          .notice
+            = notice
+        %p
+          .alert
+            = alert
+
+
+        = yield
+
+      #sidebar_right
+        = render 'shared/sidebar_right'
+
+      %footer
+        .container

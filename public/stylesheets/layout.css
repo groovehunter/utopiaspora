@@ -1,0 +1,77 @@
+/* line 41, /srv/flodotfiles/.rvm/gems/ruby-1.9.3-p0@utopiaspora/gems/semanticgs-rails-1.2.0.1/vendor/assets/stylesheets/grid.scss */
+body {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 27, /srv/flodotfiles/.rvm/gems/ruby-1.9.3-p0@utopiaspora/gems/semanticgs-rails-1.2.0.1/vendor/assets/stylesheets/grid.scss */
+body:before, body:after {
+  content: "";
+  display: table;
+}
+/* line 31, /srv/flodotfiles/.rvm/gems/ruby-1.9.3-p0@utopiaspora/gems/semanticgs-rails-1.2.0.1/vendor/assets/stylesheets/grid.scss */
+body:after {
+  clear: both;
+}
+
+/* 
+$total-width: 100%;
+body { margin: 0; }
+    @include column(14);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+*/
+/* line 19, /srv/www/vhosts/utopiaspora/app/assets/stylesheets/layout.css.scss */
+header {
+  height: 26px;
+}
+
+/* line 23, /srv/www/vhosts/utopiaspora/app/assets/stylesheets/layout.css.scss */
+#container {
+  text-align: center;
+  clear: both;
+}
+
+/* line 28, /srv/www/vhosts/utopiaspora/app/assets/stylesheets/layout.css.scss */
+#content {
+  display: inline;
+  float: left;
+  width: 531.429px;
+  margin: 0 8.571px;
+}
+
+/* line 32, /srv/www/vhosts/utopiaspora/app/assets/stylesheets/layout.css.scss */
+#sidebar_left {
+  display: inline;
+  float: left;
+  width: 188.571px;
+  margin: 0 8.571px;
+}
+
+/* line 36, /srv/www/vhosts/utopiaspora/app/assets/stylesheets/layout.css.scss */
+#sidebar_right {
+  display: inline;
+  float: left;
+  width: 188.571px;
+  margin: 0 8.571px;
+}
+
+@media (max-device-width: 960px) {
+  /* line 42, /srv/www/vhosts/utopiaspora/app/assets/stylesheets/layout.css.scss */
+  #content {
+    display: inline;
+    float: left;
+    width: 805.714px;
+    margin: 0 8.571px;
+  }
+
+  /* line 43, /srv/www/vhosts/utopiaspora/app/assets/stylesheets/layout.css.scss */
+  #sidebar_left {
+    display: inline;
+    float: left;
+    width: 805.714px;
+    margin: 0 8.571px;
+  }
+}

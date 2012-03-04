@@ -2,12 +2,13 @@
 
 = link_to 'HOME', '/'
 %br
-= 'logged in as '+current_user.email
+-#= if 
+-#= 'logged in as '+current_user.email
 %br
 
-%ul
-  %li
+#nav_badges
+  .badge
     = link_to t('.logout'), destroy_user_session_path, :method => :delete
-  %li
+  .badge
     = link_to 'login', user_session_path
 

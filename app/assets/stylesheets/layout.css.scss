@@ -1,0 +1,41 @@
+@import 'grid';
+
+$column-width: 60;
+$gutter-width: 20;
+$columns: 14;
+
+$headerheight: 26px;
+$headerpadding: 3px;
+
+
+.center {
+  width: 960px;
+  margin: $headerheight + 2* $headerpadding+1 auto 0 auto;
+  overflow: hidden;
+}
+
+header {
+  height: $headerheight;
+  position: fixed;
+  width: 100%;
+  padding: $headerpadding 0;
+
+}
+
+#content {
+  @include column(8);
+}
+
+#sidebar_left {
+  @include column(3);
+}
+
+#sidebar_right {
+  @include column(3);
+}
+
+
+@media (max-device-width: 960px) {
+  #content { @include column(12); }
+  #sidebar_left { @include column(12); }
+}

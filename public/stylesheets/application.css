@@ -1,0 +1,50 @@
+/* line 2, /srv/www/vhosts/utopiaspora/app/assets/stylesheets/application.css.scss */
+body {
+  font-family: Verdana, Arial;
+}
+
+/* line 6, /srv/www/vhosts/utopiaspora/app/assets/stylesheets/application.css.scss */
+header {
+  background-color: #252020;
+  color: #cccccc;
+  padding: 6px 0;
+  border-bottom: 1px solid #040000;
+}
+
+/* line 13, /srv/www/vhosts/utopiaspora/app/assets/stylesheets/application.css.scss */
+#nav_badges {
+  position: absolute;
+  display: inline-block;
+  min-width: 170px;
+  top: 3px;
+  left: 440px;
+  margin-left: 20px;
+}
+
+/* line 22, /srv/www/vhosts/utopiaspora/app/assets/stylesheets/application.css.scss */
+#nav_badges .badge {
+  position: relative;
+  top: 2px;
+  display: inline;
+  margin: 0 2px;
+  padding: 8px 3px;
+  padding-bottom: 9px;
+  font-weight: bold;
+  font-size: smaller;
+  width: 28px;
+}
+
+/* line 34, /srv/www/vhosts/utopiaspora/app/assets/stylesheets/application.css.scss */
+header a {
+  color: #ccc;
+}
+
+/* line 38, /srv/www/vhosts/utopiaspora/app/assets/stylesheets/application.css.scss */
+#sidebar_left {
+  background-color: #ddd;
+}
+
+/* line 42, /srv/www/vhosts/utopiaspora/app/assets/stylesheets/application.css.scss */
+#sidebar_right {
+  background-color: #eee;
+}
