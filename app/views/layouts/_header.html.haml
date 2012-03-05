@@ -10,5 +10,7 @@
   .badge
     = link_to t('.logout'), destroy_user_session_path, :method => :delete
   .badge
-    = link_to 'login', user_session_path
+    = link_to t('login'), user_session_path
+  .badge
+    = link_to t('signup'), new_user_registration_path
 
