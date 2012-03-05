@@ -1,4 +1,6 @@
 Utopiaspora::Application.routes.draw do
+  resources :profiles
+
   devise_for :users
 
   controller :publics do

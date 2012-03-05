@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120303110147) do
+ActiveRecord::Schema.define(:version => 20120305211309) do
 
   create_table "people", :force => true do |t|
     t.string   "guid"
@@ -19,6 +19,24 @@ ActiveRecord::Schema.define(:version => 20120303110147) do
     t.string   "diaspora_handle"
     t.text     "serialized_public_key"
     t.integer  "owner_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "profiles", :force => true do |t|
+    t.string   "diaspora_handle"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "image_url"
+    t.string   "image_url_small"
+    t.string   "image_url_medium"
+    t.date     "birthday"
+    t.string   "gender"
+    t.text     "bio"
+    t.boolean  "searchable"
+    t.integer  "person_id"
+    t.string   "location"
+    t.string   "full_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -36,6 +54,8 @@ ActiveRecord::Schema.define(:version => 20120303110147) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "username"
+    t.text     "serialized_private_key"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

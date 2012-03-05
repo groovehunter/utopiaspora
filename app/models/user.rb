@@ -6,10 +6,20 @@ class User < ActiveRecord::Base
 
 
   has_one :person, :foreign_key => :owner_id
+  delegate :public_key, :diaspora_handle, :name, :profile, 
+            :first_name, :last_name, :to => :person
 
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
+  attr_accessible :email, 
+                  :password, 
+                  :password_confirmation,
+                  :username
   
+  
+  
+  def encryption_key
+    OpenSSL::PKey::RSA.new(serialized_private_key)
+  end
 
 end
