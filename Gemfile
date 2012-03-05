@@ -9,6 +9,9 @@ gem 'haml'
 gem 'haml-rails'
 gem 'semanticgs-rails'
 
+
+gem 'settingslogic', '2.0.6'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

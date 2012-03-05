@@ -1,9 +1,13 @@
 Utopiaspora::Application.routes.draw do
   devise_for :users
 
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
+  controller :publics do
+    get '.well-known/host-meta' => :host_meta
+  end
 
+  Rails.logger.debug "000000  #{AppConfig['anyset']} "
+  
+  
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

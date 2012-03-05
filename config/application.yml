@@ -1,0 +1,33 @@
+
+
+
+defaults: &defaults
+
+  
+  wowset: "huhu"
+
+  pod_url: "http://menschenweit.homelinux.org"
+  pod_uri: "http://menschenweit.homelinux.org"
+
+  debug: true
+
+  # If you want normal Rails logs, set this to false in the appropriate environment.
+  # It is false by default in development and test.
+  enable_splunk_logging: true
+
+  anyset: "dbuggg"
+
+development:
+  <<: *defaults
+  enable_splunk_logging: false
+
+production:
+  <<: *defaults
+  single_process_mode: false
+
+# Do not touch unless you know what you're doing
+test:
+  <<: *defaults
+  pod_url: "http://example.org"
+  socket_port: 8081
+  enable_splunk_logging: false
