@@ -10,6 +10,7 @@ gem 'haml-rails'
 gem 'semanticgs-rails'
 gem 'addressable', '2.2.4', :require => 'addressable/uri'
 
+gem 'factory_girl_rails'
 
 gem 'settingslogic', '2.0.6'
 
