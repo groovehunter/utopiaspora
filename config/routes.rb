@@ -1,14 +1,25 @@
 Utopiaspora::Application.routes.draw do
   resources :profiles
 
-  devise_for :users
 
   controller :publics do
     get '.well-known/host-meta' => :host_meta
   end
 
-  Rails.logger.debug "000000  #{AppConfig['anyset']} "
-  
+
+  ### up to now, default devise, but new session = sign_in should get 
+  # own form with username instead of email
+  #devise_for :users
+  devise_for :users, :controllers => {
+                                      #:registrations => "registrations",
+                                      :password      => "devise/passwords",
+                                      :sessions      => "sessions",
+                                    } do
+                                     # :invitations   => "invitations"} do
+#    get 'invitations/resend/:id' => 'invitations#resend', :as => 'invitation_resend'
+#    get 'invitations/email' => 'invitations#email', :as => 'invite_email'
+  end
+ 
   
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
