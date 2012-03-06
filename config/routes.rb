@@ -11,7 +11,7 @@ Utopiaspora::Application.routes.draw do
   # own form with username instead of email
   #devise_for :users
   devise_for :users, :controllers => {
-                                      #:registrations => "registrations",
+                                      :registrations => "registrations",
                                       :password      => "devise/passwords",
                                       :sessions      => "sessions",
                                     } do
